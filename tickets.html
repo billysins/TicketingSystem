@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Ticketing System</title>
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/mytickets.css">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="logo">
+            <a href="#">Logo</a>
+        </div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Tickets</a>
+            <a href="#">Profile</a>
+            <a href="#">Logout</a>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="sidebar">
+            <a href="dashboard.html">Dashboard</a>
+            <a href="form.html">Submit Ticket</a>
+            <a href="tickets.html">My Tickets</a>
+            <a href="#">Assigned Tickets</a>
+            <a href="#">Ticket Status</a>
+            <a href="#">Knowledge Base</a>
+            <a href="#">Settings</a>
+            <a href="#">Reports</a>
+            <a href="#">Support</a>
+            <a href="#">Logout</a>
+        </div>
+        <div class="content">
+            <div class="tickets-container">
+                <h2>My Tickets</h2>
+        
+                <div class="filter-sort">
+                    <input type="text" placeholder="Search Tickets">
+                    <select>
+                        <option value="all">All Statuses</option>
+                        <option value="open">Open</option>
+                        <option value="in-progress">In Progress</option>
+                        <option value="resolved">Resolved</option>
+                        <option value="closed">Closed</option>
+                    </select>
+                    <select>
+                        <option value="date">Sort by Date</option>
+                        <option value="priority">Sort by Priority</option>
+                    </select>
+                </div>
+        
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Ticket ID</th>
+                            <th>Title</th>
+                            <th>Status</th>
+                            <th>Priority</th>
+                            <th>Created Date</th>
+                            <th>Last Updated</th>
+                            <th>Assigned To</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#12345</td>
+                            <td>Network Issue</td>
+                            <td>In Progress</td>
+                            <td>High</td>
+                            <td>2024-08-17</td>
+                            <td>2024-08-18</td>
+                            <td>John Doe</td>
+                            <td class="action-buttons">
+                                <a href="#">View</a>
+                                <a href="#">Edit</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#12346</td>
+                            <td>Internet Problem</td>
+                            <td>In Progress</td>
+                            <td>Medium</td>
+                            <td>2024-08-17</td>
+                            <td>2024-08-18</td>
+                            <td>Clarise</td>
+                            <td class="action-buttons">
+                                <a href="#">View</a>
+                                <a href="#">Edit</a>
+                            </td>
+                        </tr>
+                        <!-- Additional rows as needed -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .top-bar {
+            height: 60px;
+            background-color: #333;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+
+        .main-content {
+            display: flex;
+            flex: 1;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: #f0f0f0;
+        }
+
+        .dashboard-item {
+            flex: 1;
+            background-color: white;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .dashboard-item h2 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <div class="logo">
+            <a href="#">Logo</a>
+        </div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Tickets</a>
+            <a href="#">Profile</a>
+            <a href="#">Logout</a>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="dashboard-item">
+            <h2>Active Tickets</h2>
+            <p>Summary of active, resolved, and pending tickets.</p>
+        </div>
+        <div class="dashboard-item">
+            <h2>Ticket Statistics</h2>
+            <p>Charts and graphs showing ticket trends and distribution.</p>
+        </div>
+        <div class="dashboard-item">
+            <h2>Recent Activities</h2>
+            <p>Feed of recent activities, such as new tickets and updates.</p>
+        </div>
+        <div class="dashboard-item">
+            <h2>Quick Actions</h2>
+            <p>Links to submit a new ticket, view tickets, or access settings.</p>
+        </div>
+    </div>
+</body>
+</html>
