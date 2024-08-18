@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Ticketing System</title>
+    <link rel="stylesheet" href="styles/dashboard.css">
+    <link rel="stylesheet" href="styles/home-css.css">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="logo">
+            <a href="#">Logo</a>
+        </div>
+        <div class="nav-links">
+            <a href="homepage.html">Home</a>
+            <a href="#">Tickets</a>
+            <a href="#">Profile</a>
+            <a href="#">Logout</a>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="sidebar">
+            <a href="dashboard.html">Dashboard</a>
+            <a href="form.html">Submit Ticket</a>
+            <a href="tickets.html">My Tickets</a>
+            <a href="#">Assigned Tickets</a>
+            <a href="#">Ticket Status</a>
+            <a href="#">Knowledge Base</a>
+            <a href="#">Settings</a>
+            <a href="#">Reports</a>
+            <a href="#">Support</a>
+            <a href="#">Logout</a>
+        </div>
+        <div class="home-content">
+             <!-- Top Panel -->
+    <header>
+      <h1>Welcome to the IT Support Portal</h1>
+  </header>
+
+  <!-- Content Area -->
+  <main class="content-area">
+      <!-- Welcome Message -->
+      <section class="welcome-message">
+          <h2>Basic Troubleshooting Tips</h2>
+          <p>Explore troubleshooting tips, submit your issues, and track your tickets with ease.</p>
+      </section>
+
+      <!-- Troubleshooting Tips Slider -->
+      <section class="slider">
+          <div class="slides">
+              <div class="slide">
+                  <img src="img/restart.png" alt="Restart Computer" width="500px" height="800px">
+                  <p>Restart Your Computer: Often, restarting your device can resolve many common issues.</p>
+              </div>
+              <div class="slide">
+                  <img src="img/check-internet.png" alt="Check Internet Connection" width="500px" height="800px">
+                  <p>Check Your Internet Connection: Ensure your device is connected to the internet before troubleshooting further.</p>
+              </div>
+              <div class="slide">
+                  <img src="img/update.png" alt="Update Software" width="400px" height="600px">
+                  <p>Update Your Software: Keep your software up-to-date to avoid compatibility issues.</p>
+              </div>
+          </div>
+          <!-- Slider Controls -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </section>
+  </main>
+        </div>
+    </div>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

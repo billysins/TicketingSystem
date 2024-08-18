@@ -1,0 +1,88 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* Top Panel */
+header {
+  background-color: #2c3e50;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Content Area */
+.content-area {
+  padding: 20px;
+  text-align: center;
+  width: 100%; /* Full width now that left panel is removed */
+}
+
+/* Welcome Message */
+.welcome-message h2 {
+  color: #2c3e50;
+}
+
+/* Slider */
+.slider {
+  position: relative;
+  max-width: 100%;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+.slides {
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 10px;
+}
+
+.slide img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Slider Controls */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 170px;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 0;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.home-content {
+  display: flex;
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f0f0f0;
+}
